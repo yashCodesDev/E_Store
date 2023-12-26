@@ -1,4 +1,4 @@
-# e_store
+# E_store
 
 A new Flutter project.
 
