@@ -1,4 +1,6 @@
+import 'package:e_store/features/authentication/screens/password_configuration/forget_password.dart';
 import 'package:e_store/features/authentication/screens/signup/signup.dart';
+import 'package:e_store/navigation_menu.dart';
 import 'package:e_store/utils/constants/colors.dart';
 import 'package:e_store/utils/constants/sizes.dart';
 import 'package:e_store/utils/constants/text_strings.dart';
@@ -65,7 +67,9 @@ class ELoginForm extends StatelessWidget {
 
                 //Forget Password
                 TextButton(
-                    onPressed: () {}, child: const Text(ETexts.forgetPassword)),
+                    onPressed: () => Get.to(() => const ForgetPassword(),
+                        duration: const Duration(seconds: 0)),
+                    child: const Text(ETexts.forgetPassword)),
               ],
             ),
             const SizedBox(
@@ -76,7 +80,9 @@ class ELoginForm extends StatelessWidget {
             SizedBox(
                 width: double.infinity,
                 child: ElevatedButton(
-                    onPressed: () {}, child: const Text(ETexts.signIn))),
+                    onPressed: () => Get.to(const NavigationMenu(),
+                        duration: const Duration(seconds: 0)),
+                    child: const Text(ETexts.signIn))),
 
             const SizedBox(
               height: ESizes.spaceBtwItems,
@@ -87,7 +93,8 @@ class ELoginForm extends StatelessWidget {
             SizedBox(
               width: double.infinity,
               child: OutlinedButton(
-                  onPressed: () => Get.to(() => const SignUpScreen()),
+                  onPressed: () => Get.to(() => const SignUpScreen(),
+                      duration: const Duration(seconds: 0)),
                   child: const Text(ETexts.createAccount)),
             ),
             const SizedBox(

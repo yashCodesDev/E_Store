@@ -11,7 +11,7 @@ class EElevatedButtonTheme {
       backgroundColor: Colors.pink,
       disabledForegroundColor: Colors.grey,
       disabledBackgroundColor: Colors.grey,
-      side: const BorderSide(color: Colors.pink),
+      // side: const BorderSide(color: Colors.pink),
       padding: const EdgeInsets.symmetric(vertical: 18),
       textStyle: const TextStyle(
           fontSize: 16, color: Colors.white, fontWeight: FontWeight.w600),
@@ -28,7 +28,7 @@ class EElevatedButtonTheme {
       backgroundColor: Colors.pink,
       disabledForegroundColor: Colors.grey,
       disabledBackgroundColor: Colors.grey,
-      side: const BorderSide(color: Colors.pink),
+      // side: const BorderSide(color: Colors.pink),
       padding: const EdgeInsets.symmetric(vertical: 18),
       textStyle: const TextStyle(
           fontSize: 16, color: Colors.white, fontWeight: FontWeight.w600),

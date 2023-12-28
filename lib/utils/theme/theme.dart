@@ -30,7 +30,7 @@ class EAppTheme {
       fontFamily: 'Poppins',
       brightness: Brightness.dark,
       primaryColor: Colors.pink,
-      scaffoldBackgroundColor: Colors.black,
+      scaffoldBackgroundColor: Colors.black54,
       textTheme: ETextTheme.darkTextTheme,
       elevatedButtonTheme: EElevatedButtonTheme.darkElevatedButtonTheme,
       appBarTheme: EAppBarTheme.darkAppBarTheme,
