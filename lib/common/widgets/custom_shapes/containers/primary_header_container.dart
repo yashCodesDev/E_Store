@@ -20,7 +20,7 @@ class EPrimaryHeaderContainer extends StatelessWidget {
 
         ///
         child: SizedBox(
-          height: 350,
+          height: 400,
           child: Stack(
             children: [
               /// ----- Background Custom Shapes

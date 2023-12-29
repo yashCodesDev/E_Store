@@ -1,4 +1,3 @@
-import 'package:e_store/common/styles/spacing_styles.dart';
 import 'package:e_store/features/authentication/screens/login/login.dart';
 import 'package:e_store/features/authentication/screens/password_configuration/forget_password.dart';
 import 'package:e_store/utils/constants/image_strings.dart';
