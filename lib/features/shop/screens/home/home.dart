@@ -35,6 +35,7 @@ class HomeScreen extends StatelessWidget {
                   /// --- SearchBar
                   ESearchContainer(
                     text: 'Search in store',
+                    padding: EdgeInsets.zero,
                   ),
                   SizedBox(
                     height: ESizes.spaceBtwSections,
@@ -84,7 +85,7 @@ class HomeScreen extends StatelessWidget {
                       height: ESizes.spaceBtwItems,
                     ),
                     EGridLayout(
-                      itemCount: 3,
+                      itemCount: 6,
                       itemBuilder: (_, index) => const EProductCardVertical(),
                     ),
                   ],

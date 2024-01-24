@@ -2,6 +2,8 @@ import 'package:e_store/common/styles/shadows.dart';
 import 'package:e_store/common/widgets/custom_shapes/containers/rounded_container.dart';
 import 'package:e_store/common/widgets/icons/e_circular_icon.dart';
 import 'package:e_store/common/widgets/images/e_rounded_image.dart';
+import 'package:e_store/common/widgets/texts/e_brand_title_text.dart';
+import 'package:e_store/common/widgets/texts/e_brand_title_text_with_vertical_icon.dart';
 import 'package:e_store/common/widgets/texts/product_price_text.dart';
 import 'package:e_store/common/widgets/texts/product_title_text.dart';
 import 'package:e_store/utils/constants/colors.dart';
@@ -74,67 +76,57 @@ class EProductCardVertical extends StatelessWidget {
             const SizedBox(
               height: ESizes.spaceBtwItems / 2,
             ),
-            Padding(
-              padding: const EdgeInsets.only(left: ESizes.sm),
+
+            /// -- Details
+            const Padding(
+              padding: EdgeInsets.only(left: ESizes.sm),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  const EProductTitleText(
+                  EProductTitleText(
                     title: 'Green Nike Air Shoes',
                     smallSize: true,
                   ),
-                  const SizedBox(
+                  SizedBox(
                     height: ESizes.spaceBtwItems / 2,
                   ),
-                  Row(
-                    children: [
-                      Text(
-                        'Nike',
-                        overflow: TextOverflow.ellipsis,
-                        maxLines: 1,
-                        style: Theme.of(context).textTheme.labelMedium,
-                      ),
-                      const SizedBox(
-                        width: ESizes.xs,
-                      ),
-                      const Icon(
-                        Iconsax.verify5,
-                        color: EColors.primary,
-                        size: ESizes.iconXs,
-                      )
-                    ],
+                  EBrandTitleWithVerifiedIcon(
+                    title: 'Nike',
                   ),
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [
-                      /// Price
-                      const EProductPriceText(
-                        price: '35.5',
-                      ),
-                      Container(
-                        decoration: const BoxDecoration(
-                          color: EColors.dark,
-                          borderRadius: BorderRadius.only(
-                            topLeft: Radius.circular(ESizes.cardRadiusMd),
-                            bottomRight:
-                                Radius.circular(ESizes.productImageRadius),
-                          ),
-                        ),
-                        child: const SizedBox(
-                          width: ESizes.iconLg * 1.2,
-                          height: ESizes.iconLg * 1.2,
-                          child: Center(
-                            child: Icon(
-                              Iconsax.add,
-                              color: EColors.white,
-                            ),
-                          ),
-                        ),
-                      )
-                    ],
-                  )
                 ],
               ),
+            ),
+            const Spacer(),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                /// Price
+                const Padding(
+                  padding: EdgeInsets.only(left: ESizes.sm),
+                  child: EProductPriceText(
+                    price: '35.5',
+                  ),
+                ),
+                Container(
+                  decoration: const BoxDecoration(
+                    color: EColors.dark,
+                    borderRadius: BorderRadius.only(
+                      topLeft: Radius.circular(ESizes.cardRadiusMd),
+                      bottomRight: Radius.circular(ESizes.productImageRadius),
+                    ),
+                  ),
+                  child: const SizedBox(
+                    width: ESizes.iconLg * 1.2,
+                    height: ESizes.iconLg * 1.2,
+                    child: Center(
+                      child: Icon(
+                        Iconsax.add,
+                        color: EColors.white,
+                      ),
+                    ),
+                  ),
+                )
+              ],
             )
           ],
         ),
