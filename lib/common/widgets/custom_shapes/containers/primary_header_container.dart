@@ -19,28 +19,25 @@ class EPrimaryHeaderContainer extends StatelessWidget {
         padding: const EdgeInsets.only(bottom: 0),
 
         ///
-        child: SizedBox(
-          height: 400,
-          child: Stack(
-            children: [
-              /// ----- Background Custom Shapes
-              Positioned(
-                top: -150,
-                right: -250,
-                child: ECircularContainer(
-                  backgroundColor: EColors.textWhite.withOpacity(0.1),
-                ),
+        child: Stack(
+          children: [
+            /// ----- Background Custom Shapes
+            Positioned(
+              top: -150,
+              right: -250,
+              child: ECircularContainer(
+                backgroundColor: EColors.textWhite.withOpacity(0.1),
               ),
-              Positioned(
-                top: 100,
-                right: -300,
-                child: ECircularContainer(
-                  backgroundColor: EColors.textWhite.withOpacity(0.1),
-                ),
+            ),
+            Positioned(
+              top: 100,
+              right: -300,
+              child: ECircularContainer(
+                backgroundColor: EColors.textWhite.withOpacity(0.1),
               ),
-              child,
-            ],
-          ),
+            ),
+            child,
+          ],
         ),
       ),
     );

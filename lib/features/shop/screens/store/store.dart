@@ -76,7 +76,7 @@ class Store extends StatelessWidget {
                             mainAxisExtent: 80,
                             itemBuilder: (_, index) {
                               return const EBrandCard(
-                                showBorder: false,
+                                showBorder: true,
                               );
                             })
                       ],

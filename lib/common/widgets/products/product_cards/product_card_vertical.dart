@@ -6,11 +6,14 @@ import 'package:e_store/common/widgets/texts/e_brand_title_text.dart';
 import 'package:e_store/common/widgets/texts/e_brand_title_text_with_vertical_icon.dart';
 import 'package:e_store/common/widgets/texts/product_price_text.dart';
 import 'package:e_store/common/widgets/texts/product_title_text.dart';
+import 'package:e_store/features/shop/screens/product_details/product_detail.dart';
+import 'package:e_store/features/shop/screens/wishlist/wishlist.dart';
 import 'package:e_store/utils/constants/colors.dart';
 import 'package:e_store/utils/constants/image_strings.dart';
 import 'package:e_store/utils/constants/sizes.dart';
 import 'package:e_store/utils/helpers/helper_functions.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
 
 class EProductCardVertical extends StatelessWidget {
@@ -20,7 +23,7 @@ class EProductCardVertical extends StatelessWidget {
   Widget build(BuildContext context) {
     final dark = EHelperFunctions.isDarkMode(context);
     return GestureDetector(
-      onTap: () {},
+      onTap: () => Get.to(() => const ProductDetail()),
       child: Container(
         width: 180,
         padding: const EdgeInsets.all(1),
@@ -62,12 +65,13 @@ class EProductCardVertical extends StatelessWidget {
                   ),
 
                   /// ---Favourite Icon Button
-                  const Positioned(
+                  Positioned(
                     top: 0,
                     right: 0,
                     child: ECircularIcon(
                       icon: Iconsax.heart5,
                       color: Colors.red,
+                      onPressed: () => Get.to(const FavouriteScreen()),
                     ),
                   )
                 ],

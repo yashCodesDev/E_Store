@@ -1,3 +1,4 @@
+import 'package:e_store/utils/constants/colors.dart';
 import 'package:e_store/utils/theme/custom_theme/text_theme.dart';
 import 'package:flutter/material.dart';
 import 'package:e_store/utils/theme/custom_theme/appbar_theme.dart';
@@ -30,7 +31,7 @@ class EAppTheme {
       fontFamily: 'Poppins',
       brightness: Brightness.dark,
       primaryColor: Colors.pink,
-      scaffoldBackgroundColor: Colors.black54,
+      scaffoldBackgroundColor: const Color.fromARGB(171, 0, 0, 0),
       textTheme: ETextTheme.darkTextTheme,
       elevatedButtonTheme: EElevatedButtonTheme.darkElevatedButtonTheme,
       appBarTheme: EAppBarTheme.darkAppBarTheme,

@@ -11,7 +11,7 @@ class ERoundedImage extends StatelessWidget {
     this.applyImageRadius = true,
     this.border,
     this.backgroundColor,
-    this.fit,
+    this.fit = BoxFit.contain,
     this.padding,
     this.isNetworkImage = false,
     this.onPressed,
@@ -32,6 +32,9 @@ class ERoundedImage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
+      width: width,
+      padding: padding,
+      height: height,
       decoration: BoxDecoration(
         border: border,
         color: backgroundColor,
