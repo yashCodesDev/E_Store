@@ -7,6 +7,7 @@ import 'package:e_store/common/widgets/texts/section_heading.dart';
 import 'package:e_store/features/authentication/screens/login/login.dart';
 import 'package:e_store/features/personalization/screens/address/address.dart';
 import 'package:e_store/features/personalization/screens/profile/profile.dart';
+import 'package:e_store/features/shop/screens/order/order.dart';
 import 'package:e_store/utils/constants/colors.dart';
 import 'package:e_store/utils/constants/image_strings.dart';
 import 'package:e_store/utils/constants/sizes.dart';
@@ -69,7 +70,7 @@ class SettingsScreen extends StatelessWidget {
                       icon: Iconsax.bag_tick,
                       title: 'My Orders',
                       subTitle: 'In-progress and Completed Orders',
-                      onTap: () {}),
+                      onTap: () => Get.to(() => const OrderScreen())),
                   ESettingsMenuTile(
                       icon: Iconsax.bank,
                       title: 'Bank Account',

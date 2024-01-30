@@ -1,4 +1,4 @@
-import 'package:e_store/common/widgets/success_screen/sucess_screen.dart';
+import 'package:e_store/common/widgets/success_screen/success_screen.dart';
 import 'package:e_store/features/authentication/screens/login/login.dart';
 import 'package:e_store/utils/constants/image_strings.dart';
 import 'package:e_store/utils/constants/sizes.dart';
@@ -72,10 +72,13 @@ class VerifyEmailScreen extends StatelessWidget {
                 width: double.infinity,
                 child: ElevatedButton(
                     onPressed: () => Get.to(
-                        () => const SuccessScreen(
+                        () => SuccessScreen(
                               image: EImages.staticSuccessIllustration,
                               title: ETexts.yourAccountCreatedTitle,
                               subtitle: ETexts.yourAccountCreatedSubTitle,
+                              onPressed: () => Get.to(
+                                () => const LoginScreen(),
+                              ),
                             ),
                         duration: const Duration(seconds: 0)),
                     child: const Text(ETexts.eContinue)),

@@ -31,7 +31,7 @@ class Store extends StatelessWidget {
             'Store',
             style: Theme.of(context).textTheme.headlineMedium,
           ),
-          actions: [ECartCounterIcon(onPressed: () {})],
+          actions: const [ECartCounterIcon()],
         ),
         body: NestedScrollView(
             headerSliverBuilder: (_, innerBoxIsScrolled) {

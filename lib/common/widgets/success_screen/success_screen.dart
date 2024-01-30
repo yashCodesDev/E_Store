@@ -11,9 +11,11 @@ class SuccessScreen extends StatelessWidget {
       {super.key,
       required this.image,
       required this.title,
-      required this.subtitle});
+      required this.subtitle,
+      required this.onPressed});
 
   final String image, title, subtitle;
+  final VoidCallback onPressed;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -51,9 +53,7 @@ class SuccessScreen extends StatelessWidget {
           SizedBox(
             width: double.infinity,
             child: ElevatedButton(
-                onPressed: () => Get.to(() => const LoginScreen(),
-                    duration: const Duration(seconds: 0)),
-                child: const Text(ETexts.eContinue)),
+                onPressed: onPressed, child: const Text(ETexts.eContinue)),
           ),
         ]),
       ),
