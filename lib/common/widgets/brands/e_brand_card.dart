@@ -28,6 +28,7 @@ class EBrandCard extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             Flexible(
+              flex: 1,
               child: ECircularImage(
                 image: EImages.adidasLogo,
                 isNetworkImage: false,
@@ -41,6 +42,7 @@ class EBrandCard extends StatelessWidget {
 
             /// -- Text
             Expanded(
+              flex: 2,
               child: Column(
                 mainAxisSize: MainAxisSize.min,
                 crossAxisAlignment: CrossAxisAlignment.start,

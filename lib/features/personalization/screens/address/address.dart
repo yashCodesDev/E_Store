@@ -1,5 +1,4 @@
 import 'package:e_store/common/widgets/appbar/appbar.dart';
-import 'package:e_store/common/widgets/custom_shapes/containers/rounded_container.dart';
 import 'package:e_store/features/personalization/screens/address/add_new_address.dart';
 import 'package:e_store/features/personalization/screens/address/widgets/single_address.dart';
 import 'package:e_store/utils/constants/colors.dart';
@@ -15,7 +14,8 @@ class UserAddressScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       floatingActionButton: FloatingActionButton(
-        onPressed: () => Get.to(() => const AddNewAddressScreen()),
+        onPressed: () => Get.to(() => const AddNewAddressScreen(),
+            duration: const Duration(milliseconds: 0)),
         child: const Icon(
           Iconsax.add,
           color: EColors.white,

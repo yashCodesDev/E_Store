@@ -16,7 +16,8 @@ class ECartCounterIcon extends StatelessWidget {
     return Stack(
       children: [
         IconButton(
-            onPressed: () => Get.to(() => const CartScreen()),
+            onPressed: () => Get.to(() => const CartScreen(),
+                duration: const Duration(milliseconds: 1)),
             icon: Icon(
               Iconsax.shopping_bag,
               color: iconColor,

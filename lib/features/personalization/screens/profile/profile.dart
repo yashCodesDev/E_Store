@@ -2,12 +2,10 @@ import 'package:e_store/common/widgets/appbar/appbar.dart';
 import 'package:e_store/common/widgets/images/e_circular_image.dart';
 import 'package:e_store/common/widgets/texts/section_heading.dart';
 import 'package:e_store/features/personalization/screens/profile/widgets/profile_menu.dart';
-import 'package:e_store/features/personalization/screens/settings/settings.dart';
 import 'package:e_store/utils/constants/image_strings.dart';
 import 'package:e_store/utils/constants/sizes.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:iconsax/iconsax.dart';
 
 class ProfileScreen extends StatelessWidget {
   const ProfileScreen({super.key});

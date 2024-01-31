@@ -1,4 +1,3 @@
-import 'package:e_store/utils/constants/colors.dart';
 import 'package:e_store/utils/theme/custom_theme/text_theme.dart';
 import 'package:flutter/material.dart';
 import 'package:e_store/utils/theme/custom_theme/appbar_theme.dart';

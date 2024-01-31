@@ -1,5 +1,4 @@
 import 'package:e_store/common/widgets/appbar/appbar.dart';
-import 'package:e_store/common/widgets/products/cart/cart_item.dart';
 import 'package:e_store/features/shop/screens/cart/widgets/cart_items.dart';
 import 'package:e_store/features/shop/screens/checkout/checkout.dart';
 import 'package:e_store/utils/constants/sizes.dart';
@@ -33,7 +32,8 @@ class CartScreen extends StatelessWidget {
       bottomNavigationBar: Padding(
         padding: const EdgeInsets.all(ESizes.defaultSpace),
         child: ElevatedButton(
-            onPressed: () => Get.to(() => const CheckoutScreen()),
+            onPressed: () => Get.to(() => const CheckoutScreen(),
+                duration: const Duration(milliseconds: 0)),
             child: const Text('Checkout \$256.0')),
       ),
     );

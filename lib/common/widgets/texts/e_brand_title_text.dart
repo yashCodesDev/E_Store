@@ -1,8 +1,5 @@
-import 'package:e_store/utils/constants/colors.dart';
 import 'package:e_store/utils/constants/enums.dart';
-import 'package:e_store/utils/constants/sizes.dart';
 import 'package:flutter/material.dart';
-import 'package:iconsax/iconsax.dart';
 
 class EBrandTitleText extends StatelessWidget {
   const EBrandTitleText({
@@ -26,6 +23,7 @@ class EBrandTitleText extends StatelessWidget {
       children: [
         Text(
           title,
+          textAlign: textAlign,
           overflow: TextOverflow.ellipsis,
           maxLines: maxLines,
           style: brandTextSize == TextSizes.small

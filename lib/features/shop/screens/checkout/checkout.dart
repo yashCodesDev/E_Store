@@ -13,7 +13,6 @@ import 'package:e_store/utils/constants/sizes.dart';
 import 'package:e_store/utils/helpers/helper_functions.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:get/get_core/src/get_main.dart';
 
 class CheckoutScreen extends StatelessWidget {
   const CheckoutScreen({super.key});
@@ -74,6 +73,7 @@ class CheckoutScreen extends StatelessWidget {
 
                     /// Address
                     EBillingAddressSection(),
+                    SizedBox(height: ESizes.spaceBtwItems),
                   ],
                 ),
               ),
@@ -85,13 +85,12 @@ class CheckoutScreen extends StatelessWidget {
         padding: const EdgeInsets.all(ESizes.defaultSpace),
         child: ElevatedButton(
             onPressed: () => Get.to(
-                  () => SuccessScreen(
-                      image: EImages.successfulPaymentIcon,
-                      title: 'Payment Success',
-                      subtitle: 'Your item will be shipped soon!',
-                      onPressed: () =>
-                          Get.offAll(() => const NavigationMenu())),
-                ),
+                () => SuccessScreen(
+                    image: EImages.successfulPaymentIcon,
+                    title: 'Payment Success',
+                    subtitle: 'Your item will be shipped soon!',
+                    onPressed: () => Get.offAll(() => const NavigationMenu())),
+                duration: const Duration(milliseconds: 0)),
             child: const Text('Checkout \$256.0')),
       ),
     );

@@ -1,18 +1,13 @@
 import 'package:e_store/common/layouts/e_grid_layout.dart';
 import 'package:e_store/common/widgets/appbar/appbar.dart';
 import 'package:e_store/common/widgets/appbar/tabbar.dart';
-import 'package:e_store/common/widgets/brands/brand_show_case.dart';
-import 'package:e_store/common/widgets/custom_shapes/containers/rounded_container.dart';
 import 'package:e_store/common/widgets/custom_shapes/containers/search_container.dart';
-import 'package:e_store/common/widgets/images/e_circular_image.dart';
 import 'package:e_store/common/widgets/products/cart/cart_menu_icon.dart';
 import 'package:e_store/common/widgets/brands/e_brand_card.dart';
-import 'package:e_store/common/widgets/texts/e_brand_title_text_with_vertical_icon.dart';
 import 'package:e_store/common/widgets/texts/section_heading.dart';
+import 'package:e_store/features/shop/screens/brand/all_brands.dart';
 import 'package:e_store/features/shop/screens/store/widgets/category_tab.dart';
 import 'package:e_store/utils/constants/colors.dart';
-import 'package:e_store/utils/constants/enums.dart';
-import 'package:e_store/utils/constants/image_strings.dart';
 import 'package:e_store/utils/constants/sizes.dart';
 import 'package:e_store/utils/helpers/helper_functions.dart';
 import 'package:flutter/material.dart';
@@ -68,7 +63,8 @@ class Store extends StatelessWidget {
                         /// --Featured Brands
                         ESectionHeading(
                           title: 'Featured Brands',
-                          onPressed: () {},
+                          onPressed: () =>
+                              Get.to(() => const AllBrandsScreen()),
                         ),
                         const SizedBox(height: ESizes.spaceBtwItems / 1.5),
                         EGridLayout(

@@ -1,8 +1,6 @@
-import 'package:e_store/common/styles/shadows.dart';
 import 'package:e_store/common/widgets/custom_shapes/containers/rounded_container.dart';
 import 'package:e_store/common/widgets/icons/e_circular_icon.dart';
 import 'package:e_store/common/widgets/images/e_rounded_image.dart';
-import 'package:e_store/common/widgets/texts/e_brand_title_text.dart';
 import 'package:e_store/common/widgets/texts/e_brand_title_text_with_vertical_icon.dart';
 import 'package:e_store/common/widgets/texts/product_price_text.dart';
 import 'package:e_store/common/widgets/texts/product_title_text.dart';
@@ -28,14 +26,13 @@ class EProductCardVertical extends StatelessWidget {
         width: 180,
         padding: const EdgeInsets.all(1),
         decoration: BoxDecoration(
-          boxShadow: [EShadowStyle.verticalProductShadow],
           borderRadius: BorderRadius.circular(ESizes.productImageRadius),
           color: dark ? EColors.darkerGrey : EColors.white,
         ),
         child: Column(
           children: [
             ERoundedContainer(
-              height: 180,
+              height: 160,
               padding: const EdgeInsets.all(ESizes.sm),
               backgroundColor: dark ? EColors.dark : EColors.light,
               child: Stack(

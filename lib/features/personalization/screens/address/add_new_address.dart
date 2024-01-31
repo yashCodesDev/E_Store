@@ -1,5 +1,4 @@
 import 'package:e_store/common/widgets/appbar/appbar.dart';
-import 'package:e_store/utils/constants/colors.dart';
 import 'package:e_store/utils/constants/sizes.dart';
 import 'package:e_store/utils/helpers/helper_functions.dart';
 import 'package:flutter/material.dart';
@@ -24,7 +23,7 @@ class AddNewAddressScreen extends StatelessWidget {
               children: [
                 TextFormField(
                   decoration: InputDecoration(
-                    prefixIcon: Icon(Iconsax.user),
+                    prefixIcon: const Icon(Iconsax.user),
                     labelText: 'Name',
                     labelStyle: Theme.of(context).textTheme.bodyMedium,
                     floatingLabelStyle: Theme.of(context).textTheme.bodyMedium,

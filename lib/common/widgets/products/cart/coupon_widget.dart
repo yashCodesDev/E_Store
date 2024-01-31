@@ -22,8 +22,10 @@ class ECouponCode extends StatelessWidget {
           /// TextField
           Flexible(
             child: TextFormField(
-              decoration: const InputDecoration(
+              decoration: InputDecoration(
                   hintText: 'Have a promo code? Enter here',
+                  hintStyle: TextStyle(
+                      color: dark ? EColors.grey : EColors.dark, fontSize: 12),
                   focusedBorder: InputBorder.none,
                   border: InputBorder.none,
                   enabledBorder: InputBorder.none,
